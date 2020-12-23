@@ -1,7 +1,5 @@
 import json
 
-payload='{"assetId":10}'
-body='{"name":"Prueba"}'
 def json_load_byteified(file_handle):
 	return _byteify(
 		json.load(file_handle, object_hook=_byteify),
