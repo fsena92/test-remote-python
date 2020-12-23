@@ -33,6 +33,8 @@ origin=json_loads_byteified(payload)
 extension=json_loads_byteified(body)
 
 def function(orig,ext):
+	print(orig)
+	print(ext)
 	orig.update(ext)
 	return orig
 
